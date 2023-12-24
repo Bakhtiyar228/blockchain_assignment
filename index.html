@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain App</title>
+</head>
+<body>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 100px;
+        }
+
+        form {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+    <h1>Blockchain Application</h1>
+    <form action="/process" method="post">
+        <label for="p">Enter p:</label>
+        <input type="text" name="p" placeholder="prime number" required>
+        <br>
+        <label for="q">Enter q:</label>
+        <input type="text" name="q" placeholder="prime number" required>
+        <br>
+        <label for="plaintext">Enter plaintext:</label>
+        <input type="text" name="plaintext" required>
+        <br>
+        <button type="submit">Process</button>
+    </form>
+</body>
+</html>

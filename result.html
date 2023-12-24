@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain App - Result</title>
+</head>
+<body>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #007BFF;
+        }
+    </style>
+    <h1>Transaction Result</h1>
+    <p><strong>Plaintext:</strong> {{ block['plaintext'] }}</p>
+    <p><strong>Ciphertext:</strong> {{ block['ciphertext'] }}</p>
+    <p><strong>Decrypted Message:</strong> {{ block['decrypted_message'] }}</p>
+    <p><strong>Original Digital Signature:</strong> {{ block['signature'] }}</p>
+    <p><strong>Is Signature Valid:</strong> {{ block['is_signature_valid'] }}</p>
+</body>
+</html>
